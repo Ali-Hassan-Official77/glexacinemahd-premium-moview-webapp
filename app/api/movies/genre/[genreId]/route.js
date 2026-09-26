@@ -1,4 +1,5 @@
 import { fetchFromTMDB } from "@/lib/tmdb";
+export const runtime = 'edge';
 
 export async function GET(request, { params }) {
   const { genreId } = await params;

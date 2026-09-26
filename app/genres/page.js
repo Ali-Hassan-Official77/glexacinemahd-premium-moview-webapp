@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { fetchFromTMDB } from "@/lib/tmdb";
+export const runtime = 'edge';
 
 async function getGenres() {
   return fetchFromTMDB("/genre/movie/list");

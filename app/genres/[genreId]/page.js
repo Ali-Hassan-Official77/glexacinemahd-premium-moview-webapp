@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 
 import MovieGridClient from "@/components/MovieGridClient";
 import { fetchFromTMDB } from "@/lib/tmdb";
+export const runtime = 'edge';
 
 async function getGenreMovies(id) {
   return fetchFromTMDB("/discover/movie", {

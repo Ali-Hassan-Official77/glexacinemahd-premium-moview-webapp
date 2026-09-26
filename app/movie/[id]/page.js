@@ -10,6 +10,7 @@ import {
 
 import ScreenshotCard from "@/components/ScreenshotCard";
 import { fetchFromTMDB } from "@/lib/tmdb";
+export const runtime = 'edge';
 
 async function getMovie(id) {
   return fetchFromTMDB(`/movie/${id}`, {
